@@ -45,6 +45,10 @@ namespace NETD_Lab5.Controllers
         // GET: CompletedPrompts/Create
         public IActionResult Create()
         {
+            //Getting Data from DB
+            List<Prompts> promptList = new List<Prompts>();
+            ViewData["p_id"] = new SelectList(_context.Prompts, "p_id", "prompt");
+
             return View();
         }
 

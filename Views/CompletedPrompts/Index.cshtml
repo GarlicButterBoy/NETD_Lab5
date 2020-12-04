@@ -13,7 +13,8 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.p_id)
+
+                @Html.DisplayNameFor(model => model.prompts)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.book_name)
@@ -30,7 +31,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td width="30%">
                 @Html.DisplayFor(modelItem => item.p_id)
             </td>
             <td>
