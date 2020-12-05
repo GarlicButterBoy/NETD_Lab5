@@ -14,34 +14,45 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="completed_id" />
             <div class="form-group">
-                <label asp-for="p_id" class="control-label"></label>
-                <input asp-for="p_id" class="form-control" />
+                <label asp-for="p_id" class="control-label">Prompt ID</label>
+                <input asp-for="p_id" class="form-control bg-dark text-light border border-secondary" />
                 <span asp-validation-for="p_id" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="book_name" class="control-label"></label>
-                <input asp-for="book_name" class="form-control" />
+                <label asp-for="book_name" class="control-label">Book Title</label>
+                <input asp-for="book_name" class="form-control bg-dark text-light border border-secondary" />
                 <span asp-validation-for="book_name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="author_name" class="control-label"></label>
-                <input asp-for="author_name" class="form-control" />
+                <label asp-for="author_name" class="control-label">Author's Name</label>
+                <input asp-for="author_name" class="form-control bg-dark text-light border border-secondary" />
                 <span asp-validation-for="author_name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rating" class="control-label"></label>
-                <input asp-for="rating" class="form-control" />
+                <label asp-for="rating" class="control-label">Rating</label>
+                <select asp-for="rating" class="form-control  bg-dark text-light border border-secondary">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
                 <span asp-validation-for="rating" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary btn-block" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <button type="button" class="btn btn-outline-secondary text-light btn-block"> <a class="text-light" asp-action="Index">Back to List</a></button>
 </div>
 
 @section Scripts {

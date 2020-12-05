@@ -14,22 +14,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="p_id" class="control-label">Select a Prompt</label>
-                 <select asp-for="p_id" class="form-control " asp-items="@ViewBag.p_id"></select>
+                 <select asp-for="p_id" class="form-control  bg-dark text-light border border-secondary" asp-items="@ViewBag.p_id"></select>
     <span asp-validation-for="p_id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="book_name" class="control-label">Book Title</label>
-                <input asp-for="book_name" class="form-control" />
+                <input asp-for="book_name" class="form-control  bg-dark text-light border border-secondary" />
                 <span asp-validation-for="book_name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="author_name" class="control-label">Authors Name</label>
-                <input asp-for="author_name" class="form-control" />
+                <input asp-for="author_name" class="form-control  bg-dark text-light border border-secondary" />
                 <span asp-validation-for="author_name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="rating" class="control-label">Rating</label>
-                <select asp-for="rating" class="form-control">
+                <select asp-for="rating" class="form-control  bg-dark text-light border border-secondary">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>

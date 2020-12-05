@@ -12,7 +12,7 @@ namespace NETD_Lab5.Controllers
     public class CompletedPromptsController : Controller
     {
         private readonly PromptContext _context;
-
+        
         public CompletedPromptsController(PromptContext context)
         {
             _context = context;
@@ -21,7 +21,7 @@ namespace NETD_Lab5.Controllers
         // GET: CompletedPrompts
         public async Task<IActionResult> Index()
         {
-       
+
             return View(await _context.CompletedPrompts.ToListAsync());
         }
 

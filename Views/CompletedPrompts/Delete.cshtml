@@ -12,34 +12,35 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.p_id)
+            Prompt ID
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.p_id)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_name)
+            Book Title
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.author_name)
+            Author Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.author_name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.rating)
+            Rating
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.rating)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="completed_id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+        <input type="submit" value="Delete" class="btn btn-block btn-danger" /> <hr/>
+        <button type="button" class="btn btn-outline-secondary text-light btn-block"> <a class="text-light" asp-action="Index">Back to List</a>
+        </button>
+</form>
 </div>
