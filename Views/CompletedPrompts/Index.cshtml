@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <button type="button" class="btn btn-outline-primary text-light btn-block"><a class="text-light" asp-action="Create">Create New</a></button>
 </p>
 <table class="table bg-dark text-light">
     <thead>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.rating)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.completed_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.completed_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.completed_id">Delete</a>
+                <button type="button" class="btn btn-outline-info text-light btn-sm"><a asp-action="Edit" asp-route-id="@item.completed_id">Edit</a></button> |
+                <button type="button" class="btn btn-outline-info text-light btn-sm"><a asp-action="Details" asp-route-id="@item.completed_id">Details</a></button> |
+                <button type="button" class="btn btn-outline-danger text-light btn-sm"><a asp-action="Delete" asp-route-id="@item.completed_id">Delete</a></button>
             </td>
         </tr>
 }

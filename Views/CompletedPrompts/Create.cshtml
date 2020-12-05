@@ -13,23 +13,34 @@
         <form class="bg-dark text-light" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="p_id" class="control-label"></label>
-                 <select asp-for="p_id" class="form-control" asp-items="@ViewBag.p_id"></select>
+                <label asp-for="p_id" class="control-label">Select a Prompt</label>
+                 <select asp-for="p_id" class="form-control " asp-items="@ViewBag.p_id"></select>
     <span asp-validation-for="p_id" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="book_name" class="control-label"></label>
+                <label asp-for="book_name" class="control-label">Book Title</label>
                 <input asp-for="book_name" class="form-control" />
                 <span asp-validation-for="book_name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="author_name" class="control-label"></label>
+                <label asp-for="author_name" class="control-label">Authors Name</label>
                 <input asp-for="author_name" class="form-control" />
                 <span asp-validation-for="author_name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rating" class="control-label"></label>
-                <input asp-for="rating" class="form-control" />
+                <label asp-for="rating" class="control-label">Rating</label>
+                <select asp-for="rating" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
                 <span asp-validation-for="rating" class="text-danger"></span>
             </div>
             <div class="form-group">
